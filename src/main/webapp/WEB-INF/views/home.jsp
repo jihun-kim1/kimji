@@ -10,7 +10,7 @@
 <link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script&display=swap" rel="stylesheet"> <!-- 이달의 공모전 -->
 <style>
 /*    메인 이미지 css */
-    .main {width: 100%; height: 600px; background-image: url('/resources/img/banner01.jpg'); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;}
+    .main {width: 100%; height: 600px; background-image: url('img/banner01.jpg'); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;}
     
 /*    검색기능 css */
     .searchbar{margin-bottom: auto; margin-top: auto; height: 50px; background-color: #353535; border-radius: 30px; padding: 10px;}
@@ -192,15 +192,15 @@
     <div class="container-fluid" style="background-color: white;">
         <div class="container px-0 py-5">
             <div class="row">
-                <p class="contest01"><img src="/resources/img/crown.png" style="width: 50px; height: 50px;">이달의 작가<img src="/resources/img/crown.png" style="width: 50px; height: 50px;"></p>
+                <p class="contest01"><img src="img/crown.png" style="width: 50px; height: 50px;">이달의 작가<img src="img/crown.png" style="width: 50px; height: 50px;"></p>
             </div>
             <div class="row">
                 <div class="col-12 col-xl-3">
                     <div class="card m-auto" style="width: 15rem;">
-                      <img src="/resources/img/ompangi.gif" class="card-img-top m-auto" style="width: 200px; height: 200px;">
+                      <img src="img/ompangi.gif" class="card-img-top m-auto" style="width: 200px; height: 200px;">
                       <div class="card-body">
                         <h5 class="card-title">애소</h5>
-                        <p class="card-text"><img src="/resources/img/best_likes.png" style="width: 30px; height: 30px;">LIKE 4816</p>
+                        <p class="card-text"><img src="img/best_likes.png" style="width: 30px; height: 30px;">LIKE 4816</p>
                         <p class="text-center"><a href="#" class="btn btn-outline-dark btn-sm">작가피드 보러가기</a></p>
                       </div>
                     </div>
@@ -209,13 +209,13 @@
                     <div id="carousel" class="carousel slide" data-ride="carousel">
                       <div class="carousel-inner">
                         <div class="carousel-item active" style="height: 370px;">
-                          <img src="/resources/img/pic01.jpg" class="d-block m-auto h-100">
+                          <img src="img/pic01.jpg" class="d-block m-auto h-100">
                         </div>
                         <div class="carousel-item" style="height: 370px;">
-                          <img src="/resources/img/pic02.jpg" class="d-block m-auto h-100">
+                          <img src="img/pic02.jpg" class="d-block m-auto h-100">
                         </div>
                         <div class="carousel-item" style="height: 370px;">
-                          <img src="/resources/img/pic03.jpg" class="d-block m-auto h-100">
+                          <img src="img/pic03.jpg" class="d-block m-auto h-100">
                         </div>
                       </div>
                       <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
@@ -243,7 +243,7 @@
                     <div class="MultiCarousel-inner">
                         <div class="item">
                             <div class="pad15">
-                                <p><img src="/resources/img/contest.jpg" style="width: 250px; height: 170px;"></p>
+                                <p><img src="img/contest.jpg" style="width: 250px; height: 170px;"></p>
                                 <p class="lead">웨딩사진 공모전</p>
                                 <p class="text-danger">집계중</p>
                                 <p>19/12/30 ~ 20/01/30</p>
@@ -252,7 +252,7 @@
                         </div>
                         <div class="item">
                             <div class="pad15">
-                                <p><img src="/resources/img/contest.jpg" style="width: 250px; height: 170px;"></p>
+                                <p><img src="img/contest.jpg" style="width: 250px; height: 170px;"></p>
                                 <p class="lead">웨딩사진 공모전</p>
                                 <p class="text-danger">집계중</p>
                                 <p>19/12/30 ~ 20/01/30</p>
@@ -261,7 +261,7 @@
                         </div>
                         <div class="item">
                             <div class="pad15">
-                                <p><img src="/resources/img/contest.jpg" style="width: 250px; height: 170px;"></p>
+                                <p><img src="img/contest.jpg" style="width: 250px; height: 170px;"></p>
                                 <p class="lead">웨딩사진 공모전</p>
                                 <p class="text-danger">집계중</p>
                                 <p>19/12/30 ~ 20/01/30</p>
@@ -270,7 +270,7 @@
                         </div>
                         <div class="item">
                             <div class="pad15">
-                                <p><img src="/resources/img/contest.jpg" style="width: 250px; height: 170px;"></p>
+                                <p><img src="img/contest.jpg" style="width: 250px; height: 170px;"></p>
                                 <p class="lead">웨딩사진 공모전</p>
                                 <p class="text-danger">집계중</p>
                                 <p>19/12/30 ~ 20/01/30</p>
@@ -279,7 +279,7 @@
                         </div>
                         <div class="item">
                             <div class="pad15">
-                                <p><img src="/resources/img/contest.jpg" style="width: 250px; height: 170px;"></p>
+                                <p><img src="img/contest.jpg" style="width: 250px; height: 170px;"></p>
                                 <p class="lead">웨딩사진 공모전</p>
                                 <p class="text-danger">집계중</p>
                                 <p>19/12/30 ~ 20/01/30</p>
@@ -287,8 +287,8 @@
                             </div>
                         </div>
                     </div>
-                    <button class="btn border-0 leftLst"><img src="/resources/img/previous.png" style="width: 17px; height: 17px;"></button>
-                    <button class="btn border-0 rightLst"><img src="/resources/img/next.png" style="width: 17px; height: 17px;"></button>
+                    <button class="btn border-0 leftLst"><img src="img/previous.png" style="width: 17px; height: 17px;"></button>
+                    <button class="btn border-0 rightLst"><img src="img/next.png" style="width: 17px; height: 17px;"></button>
                 </div>
             </div>
         </div>

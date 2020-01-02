@@ -15,7 +15,7 @@
         <div class="col-5 col-md-4 col-lg-3 py-0 px-3 px-md-4 h-100 float-left">
             <ul class="h-100 float-left m-0 p-0" style="list-style: none;">
                 <a href="home.html" class="h-100">
-                    <li class="h-100 float-left" style="line-height: 3.0;"><img src="/resources/img/logo.png" style="width: 30px; height: 30px;"></li>
+                    <li class="h-100 float-left" style="line-height: 3.0;"><img src="img/logo.png" style="width: 30px; height: 30px;"></li>
                     <li class="h-100 float-left mx-2"><span style="font-size: 32px; font-family: 'Play', sans-serif; color: #3D516B;">PIC SELL</span></li>
                 </a>
             </ul>
