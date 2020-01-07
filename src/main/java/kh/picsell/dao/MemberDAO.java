@@ -43,7 +43,7 @@ public class MemberDAO {
 		return jdbc.selectOne("Member.managercheck",dto);
 	}
 	public MemberDTO findid(String name, String email) throws Exception{ //아이디찾기(이름, 이메일로)
-		Map<String,String> map = new HashMap<>();
+		Map<String,String> map = new HashMap<String, String>();
 		map.put("name", name);
 		map.put("email",email);
 		return jdbc.selectOne("Member.getid", map);
@@ -62,7 +62,7 @@ public class MemberDAO {
 	}
 	public int pwmodify(String pw, String id, String email) throws Exception{ //패스워드 메일인증후 인증코드로 비번변경
 		//System.out.println(dto.getPw());
-		Map<String,String> map = new HashMap<>();
+		Map<String,String> map = new HashMap<String, String>();
 		map.put("pw", pw);
 		map.put("id", id);
 		map.put("email",email);

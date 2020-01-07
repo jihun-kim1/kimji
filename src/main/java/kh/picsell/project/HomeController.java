@@ -12,12 +12,14 @@ import kh.picsell.service.MemberService;
 
 @Controller
 public class HomeController {
+	
 	@Autowired
 	private HttpSession session;
 	@Autowired
 	private MemberService service;
 	@Autowired
 	private HttpServletRequest request;
+	
 	@RequestMapping("/index")
 	public String index() {
 		System.out.println("Index Page");
@@ -39,37 +41,25 @@ public class HomeController {
 			e.printStackTrace();
 			return "error";
 		}
-	}else if((String)session.getAttribute("adminInfo")!=null) { //관리자로 로그인
-		String nickname = (String)session.getAttribute("adminInfo");
-		System.out.println("관리자닉 : "+nickname);
-		try {
-			MemberDTO black1 = service.getblacknick(nickname);
-			System.out.println(black1.getBlack());
-			int black = black1.getBlack();
+		}else if((String)session.getAttribute("adminInfo")!=null) { //관리자로 로그인
+			String nickname = (String)session.getAttribute("adminInfo");
+			System.out.println("관리자닉 : "+nickname);
+			try {
+				MemberDTO black1 = service.getblacknick(nickname);
+				System.out.println(black1.getBlack());
+				int black = black1.getBlack();
+				
+				session.setAttribute("blackpoint", black);
+				return "home";
 			
-			session.setAttribute("blackpoint", black);
+			} catch (Exception e) {
+				e.printStackTrace();
+				return "error";
+			}
+		}else { 
 			return "home";
-		
-		} catch (Exception e) {
-			e.printStackTrace();
-			return "error";
 		}
-	}else { 
-		return "home";
-	}
-	
-}
-	
-	@RequestMapping("/contest")
-	public String contest() {
-		System.out.println("Contest Page");
-		return "contest/contest";
-	}
-	
-	@RequestMapping("/writer")
-	public String writer() {
-		System.out.println("Writer Page");
-		return "writer/writer";
+		
 	}
 
 }
