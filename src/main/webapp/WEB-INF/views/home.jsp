@@ -181,15 +181,15 @@
     
 <!--  Best Pic -->
     <div class="container-fluid p-0">
-        <div class="row mt-4 mx-auto px-3">
-            <p>
-                <span style="font-family: 'Cafe24Oneprettynight'; font-size: 30px;">BEST PIC</span>
-            </p>
+        <div class="row mt-4 mb-0 mx-auto px-3">
+        	<span style="font-family: 'Cafe24Oneprettynight'; font-size: 30px;">BEST PIC</span>
         </div>
+        <hr class="p-0 m-0">
         <div class="row m-auto" style="height: 1000px;">
             여기는 베스트사진
         </div>
     </div>
+    <hr class="p-0 m-0">
     
 <!--  이달의 작가님 -->
     <div class="container-fluid" style="background-color: white;">

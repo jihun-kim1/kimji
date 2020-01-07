@@ -10,7 +10,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 <style>
 /*    작가페이지 Main */
-	.contest {width: 100%; min-height: 250px; background-image: url('/img/write_banner.png'); background-repeat: no-repeat;}
+	.writer {width: 100%; min-height: 250px; background-image: url('/img/write_banner.png'); background-repeat: no-repeat;}
 	.explanation {margin-top: 5px; padding: 0px; background: none; border: 0; color: white; border-bottom: 1px solid white;}
 	
 	.modal-open {padding: 0;}
@@ -27,7 +27,7 @@
 
 <!--  공모전 Main -->
     <div class="container-fluid m-0 p-0">
-        <div class="contest row m-0 p-0">
+        <div class="writer row m-0 p-0">
         <div class="m-auto" style="text-align: center;">
             <div class="text-white" style="font-size: 32px; font-family: 'Cafe24Oneprettynight';">작가 홈</div>
             <div class="text-white" style="font-size: 30px; font-family: 'Cafe24Oneprettynight';">￣</div>
@@ -39,15 +39,13 @@
 			  <div class="modal-dialog" role="document">
 			    <div class="modal-content" style="margin: auto; width: 450px;">
 			      <div class="modal-body text-left" style="font-family: '777Balsamtint';">
-			          	<h5 class="py-2">나도 작가가 될 수 있을까?</h5>
+			          	<h5 class="py-3">나도 작가가 될 수 있을까?</h5>
+			          	<h5 class="py-2">픽셀 회원이시라면!!<br>누구나 이미지를 업로드를 통해 작가가 되실 수 있습니다!</h5>
 			          	<h5 class="py-2">여러분만의 창의력을 담은 사진과 일러스트를 자유롭게 올려보아요~<br>일단 이미지를 업로드하면 판매될 때마다 수익을 얻을 수 있고,<br>한 장의 이미지도 여러 번 판매할 수 있어요!<br>꾸준한 업로드를 통해 수익을 늘려나가 보세요!</h5>
-			          	<hr>
-			          	<h5 class="py-2">이미지 업로드 방법</h5>
-			          	<h5 class="py-2">이미지를 업로드하고 싶은 고객님들은<br>아래 ＇이미지 등록하기＇를 통해 이미지 업로드가 가능하며<br>상세한 가이드를 원하시면 하단 주의사항을 참고해주시기 바랍니다.</h5>
-			          	<hr>
-			          	<h5 class="py-2">업로드 승인 절차</h5>
-			          	<h5 class="py-2">픽셀에 업로드 해 주신 이미지는<br>내부 심사를 거쳐 픽셀 사이트에 노출되는데요,<br>최대 7일 이내에 모든 심사가 완료됩니다.</h5>
-			          	<h5 class="py-2">내가 업로드한 이미지의 심사 상태가 궁금하시다면<br>＇마이페이지＇의 ＇심사/승인 내역＇에서 확인하실 수 있습니다.</h5>
+			          	<h5 class="py-2">작가가 되어 나의 작품을 알리고<br>나의 작품에 대해 자부심을 느낄 수 있는 기회입니다!</h5>
+			          	<h5 class="py-2">판매 수익금은 작가님의 포인트로 100% 지급되며<br>쌓인 포인트는 출금 신청을 통해 본인의 계좌로 환급받을 수 있습니다.</h5>
+			          	<h5 class="py-2">* 이미지를 업로드 하고 싶다면,<br>아래 ＇이미지 업로드 하기＇를 통해 등록 신청을 하실 수 있습니다.</h5>
+			          	<h5 class="py-2">* 상세한 가이드를 원하시면<br>하단 ＇작가 가이드＇를  참고해주시기 바랍니다.</h5>
 			      </div>
 			      <div class="modal-footer"><button type="button" class="btn btn-secondary m-auto" style="width: 150px; font-family: '777Balsamtint';" data-dismiss="modal">확인</button></div>
 			    </div>
@@ -58,9 +56,12 @@
     </div>
     
     <div class="container-fluid p-0" style="font-family: 'Cafe24Oneprettynight'; background-color: #f4f2f5;">
-    	<div class="container py-4 px-0" style="height: 400px; border: 1px solid red;">
-    		<div class="m-auto w-75 h-100" style="background-color: gray;">
-    			
+    	<div class="container px-0 pt-5" style="width: 100%; height: 350px;">
+    		<div class="my-auto mx-4 h-100 text-center" style="border: 1px solid gray; border-radius: 30px;">
+    			<h4 class="mt-5 mb-4">이미지 업로드 하기</h4>
+    			<h6>업로드 해 주신 이미지는 내부 심사를 거쳐 픽셀 사이트에 노출되며,</h6>
+    			<h6>최대 7일 이내에 모든 심사가 완료됩니다.</h6>
+    			<a href="#" class="p-0 my-5 btn text-secondary border border-secondary" style="width: 50px; height: 50px; font-size: 35px;">+</a>
     		</div>
     	</div>
     	<div class="container py-5 px-2">
@@ -147,11 +148,11 @@
     		</div>
     	</div>
     </div>
-    
-    <div class="container-fluid py-5 m-0" style="font-family: 'Cafe24Oneprettynight';">
+      
+    <div class="container-fluid py-4 m-0" style="font-family: 'Cafe24Oneprettynight';">
         <div class="container px-0 pb-2">
     		<div class="m-auto text-center">
-    			<h3>픽셀에 이미지 업로드 할 준비 되셨나요?</h3>
+    			<h3 style="font-size: 25px;">픽셀에 이미지 업로드 할 준비 되셨나요?</h3>
     			<div class="mt-4">
     				<button type="button" onclick="$('html, body').stop().animate({scrollTop:0}, 2000);" class="border border-danger rounded-lg text-danger" style="width: 150px; height: 35px; background-color: white;">시작하기</button>
     			</div>

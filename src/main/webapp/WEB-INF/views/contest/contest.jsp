@@ -61,7 +61,7 @@
     <div class="container-fluid p-0" style="background-color: #f4f2f5;">
     	<div class="pt-5 p-0 m-auto w-80" style="max-width: 1040px;">
     		<div class="row p-0 m-0 text-right">
-    			<div class="col-8 col-xs-4 col-sm-7 col-md-10 col-lg-9 col-xl-12 m-auto px-2 px-md-0 px-lg-1 px-xl-0"><a href="#" class="btn text-primary border border-primary" style="font-size: 13px;">새로운 공모전 열기</a></div>
+    			<div class="col-8 col-xs-4 col-sm-7 col-md-10 col-lg-9 col-xl-12 m-auto px-2 px-md-0 px-lg-1 px-xl-0"><a href="newOpen" class="btn text-primary border border-primary" style="font-size: 13px;">새로운 공모전 열기</a></div>
     		</div>
     	</div>
     	<div class="container pb-5">

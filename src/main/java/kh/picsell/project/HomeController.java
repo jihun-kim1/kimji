@@ -17,13 +17,7 @@ public class HomeController {
 		System.out.println("Main Page");
 		return "home";
 	}
-	
-	@RequestMapping("/contest")
-	public String contest() {
-		System.out.println("Contest Page");
-		return "contest/contest";
-	}
-	
+		
 	@RequestMapping("/writer")
 	public String writer() {
 		System.out.println("Writer Page");
