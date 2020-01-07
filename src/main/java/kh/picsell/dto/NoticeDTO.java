@@ -71,6 +71,13 @@ public class NoticeDTO {
 
 	public void setNotice_view_count(int notice_view_count) {
 		this.notice_view_count = notice_view_count;
+	}
+
+	@Override
+	public String toString() {
+		return "NoticeDTO [notice_seq=" + notice_seq + ", notice_title=" + notice_title + ", notice_contents="
+				+ notice_contents + ", notice_writer=" + notice_writer + ", notice_write_date=" + notice_write_date
+				+ ", notice_view_count=" + notice_view_count + "]";
 	};
 	
 

@@ -1,5 +1,7 @@
 package kh.picsell.dto;
 
+import java.util.Arrays;
+
 import org.springframework.web.multipart.MultipartFile;
 
 public class NoticeFileDTO {
@@ -60,4 +62,12 @@ public class NoticeFileDTO {
 	public void setNoticeFile_sysName(String noticeFile_sysName) {
 		this.noticeFile_sysName = noticeFile_sysName;
 	}
+
+	@Override
+	public String toString() {
+		return "NoticeFileDTO [noticeFile_seq=" + noticeFile_seq + ", noticeFile_parentSeq=" + noticeFile_parentSeq
+				+ ", noticeFile_file=" + Arrays.toString(noticeFile_file) + ", noticeFile_oriName=" + noticeFile_oriName
+				+ ", noticeFile_sysName=" + noticeFile_sysName + "]";
+	}
+	
 }
