@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Img">
+<select id="getNoList" resultType="kh.picsell.dto.img_upDTO">
+		select * from imageup where accept = 'N'
+	</select>
+	<select id="getYesList" resultType="kh.picsell.dto.img_upDTO">
+		select * from imageup where accept = 'Y'
+	</select>
+	<update id="accept" parameterType="kh.picsell.dto.img_upDTO">
+	update imageup set accept = 'Y' where img_seq = #{img_seq}
+	</update>
+	<delete id="delete" parameterType="integer">
+		delete from imageup where img_seq = #{img_seq}
+	</delete>
+</mapper>
