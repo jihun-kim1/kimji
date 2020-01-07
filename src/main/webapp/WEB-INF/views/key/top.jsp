@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,13 +24,27 @@
                 </a>
             </ul>
         </div>
+        <c:choose>
+	<c:when test="${loginInfo == null and adminInfo == null }">
         <div class="col-7 col-md-6 col-lg-5 col-xl-4 p-0 h-100 float-right text-right">
             <ul class="h-100 float-right mx-3 my-0" style="list-style: none;">
                 <li class="h-100 float-left mx-2 mx-sm-3 mx-md-4" style="line-height: 3.0;"><a href="contest" class="text-dark">공모전</a></li>
                 <li class="h-100 float-left mx-2 mx-sm-3 mx-md-4" style="line-height: 3.0;"><a href="writer" class="text-dark">작가 홈</a></li>
-                <li class="h-100 float-left mx-2 mx-sm-3 mx-md-4" style="line-height: 3.0;"><a href="#" class="text-dark">로그인</a></li>
+                <li class="h-100 float-left mx-2 mx-sm-3 mx-md-4" style="line-height: 3.0;"><a href="/member/login.do" class="text-dark">로그인</a></li>
             </ul>
         </div>
+        </c:when>
+        <c:when test="${adminInfo != null }">
+          <div class="col-7 col-md-6 col-lg-5 col-xl-4 p-0 h-100 float-right text-right">
+            <ul class="h-100 float-right mx-3 my-0" style="list-style: none;">
+                <li class="h-100 float-left mx-2 mx-sm-3 mx-md-4" style="line-height: 3.0;"><a href="contest" class="text-dark">공모전</a></li>
+                <li class="h-100 float-left mx-2 mx-sm-3 mx-md-4" style="line-height: 3.0;"><a href="writer" class="text-dark">작가 홈</a></li>
+                <li class="h-100 float-left mx-2 mx-sm-3 mx-md-4" style="line-height: 3.0;"><a href="/member/login.do" class="text-dark">로그인</a></li>
+            </ul>
+        </div>
+        </c:when>
+        </c:choose>
+        
     </div>
 </body>
 </html>

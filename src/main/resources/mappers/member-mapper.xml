@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Member">
+	<select id="login" resultType="integer">
+		select count(*) from member where id = #{id} and pw = #{pw}
+	</select>
+	<select id="managercheck" resultType="integer">
+		select count(*) from member where id = #{id} and pw = #{pw} and admin='Y'
+	</select>
+	<delete id="leave">
+		delete from member where id = #{nickname}
+	</delete>
+	<insert id="insert" parameterType="kh.picsell.dto.MemberDTO">
+		insert into member values(#{id}, #{pw} , #{name} , #{nickname}, #{email}, #{email_receive}, #{phone},#{zipcode},#{addr1},#{addr2},0,'N',0)
+	</insert>
+	<select id="idCheck" resultType="integer">
+		select count(*) from member where id = #{id}
+	</select>
+	<select id="nickCheck" resultType="integer">
+		select count(*) from member where nickname = #{nickname}
+	</select>
+	<select id="mailCheck" resultType="integer">
+		select count(*) from member where email = #{email}
+	</select>
+	<update id="pwmodify" parameterType="kh.picsell.dto.MemberDTO">
+		update member set pw = #{pw} where id=#{id} and email = #{email}
+	</update>
+	<select id="getid" resultType="kh.picsell.dto.MemberDTO">
+		select * from member where email = #{email} and name = #{name}
+	</select>
+	<select id="getnick" resultType="kh.picsell.dto.MemberDTO">
+		select * from member where id = #{id}
+	</select>
+	<select id="getblack" resultType="kh.picsell.dto.MemberDTO">
+		select * from member where id = #{id}
+	</select>
+	<select id="getblack-nick" resultType="kh.picsell.dto.MemberDTO">
+		select * from member where nickname = #{nickname}
+	</select>
+	<select id="list" resultType="kh.picsell.dto.MemberDTO">
+		select * from member where admin='N'
+	</select>
+	<update id="blackup" parameterType="kh.picsell.dto.MemberDTO">
+	update member set black=black+1 where id= #{id}
+	</update>
+	<update id="blackdown" parameterType="kh.picsell.dto.MemberDTO">
+	update member set black=black-1 where id= #{id}
+	</update>
+	</mapper>
