@@ -10,7 +10,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 <style>
 /*    공모전 Main */
-    .contest {width: 100%; min-height: 250px; background-image: url('/img/contest_banner.jpg'); background-repeat: no-repeat;}
+    .contest {width: 100%; min-height: 250px; background-image: url('../img/contest_banner.jpg'); background-repeat: no-repeat;}
     .explanation {margin-top: 5px; padding: 0px; background: none; border: 0; color: white; border-bottom: 1px solid white;}
     
     .modal-open {padding: 0;}
@@ -61,14 +61,14 @@
     <div class="container-fluid p-0" style="background-color: #f4f2f5;">
     	<div class="pt-5 p-0 m-auto w-80" style="max-width: 1040px;">
     		<div class="row p-0 m-0 text-right">
-    			<div class="col-8 col-xs-4 col-sm-7 col-md-10 col-lg-9 col-xl-12 m-auto px-2 px-md-0 px-lg-1 px-xl-0"><a href="newOpen" class="btn text-primary border border-primary" style="font-size: 13px;">새로운 공모전 열기</a></div>
+    			<div class="col-8 col-xs-4 col-sm-7 col-md-10 col-lg-9 col-xl-12 m-auto px-2 px-md-0 px-lg-1 px-xl-0"><a href="newOpen.do" class="btn text-primary border border-primary" style="font-size: 13px;">새로운 공모전 열기</a></div>
     		</div>
     	</div>
     	<div class="container pb-5">
     		<div class="row m-auto">
     			<div class="col-12 col-md-6 col-xl-4 mt-2 mb-4">
     				<div class="convention pb-3" style="margin: auto; width: 300px; background-color: white;">
-    					<p><img src="img/contest01.jpg" style="width: 300px; height: 170px;"></p>
+    					<p><img src="${pageContext.request.contextPath}/img/contest01.jpg" style="width: 300px; height: 170px;"></p>
     					<p class="px-2 pb-2" style="font-size: 20px;"><a href="#" style="color: black;">웨딩사진 공모전</a></p>
     					<p class="px-2 py-0" style="font-size: 17px;">상금  1,000,000원</p>
     					<p class="px-2 py-0" style="font-size: 17px;">기간  ~ 2020/01/30</p>
@@ -76,7 +76,7 @@
     			</div>
     			<div class="col-12 col-md-6 col-xl-4 mt-2 mb-4">
     				<div class="convention pb-3" style="margin: auto; width: 300px; background-color: white;">
-    					<p><img src="img/contest01.jpg" style="width: 300px; height: 170px;"></p>
+    					<p><img src="${pageContext.request.contextPath}/img/contest01.jpg" style="width: 300px; height: 170px;"></p>
     					<p class="px-2 pb-2" style="font-size: 20px;"><a href="#" style="color: black;">웨딩사진 공모전</a></p>
     					<p class="px-2 py-0" style="font-size: 17px;">상금  1,000,000원</p>
     					<p class="px-2 py-0" style="font-size: 17px;">기간  ~ 2020/01/30</p>
@@ -84,7 +84,7 @@
     			</div>
     			<div class="col-12 col-md-6 col-xl-4 mt-2 mb-4">
     				<div class="convention pb-3" style="margin: auto; width: 300px; background-color: white;">
-    					<p><img src="img/contest01.jpg" style="width: 300px; height: 170px;"></p>
+    					<p><img src="${pageContext.request.contextPath}/img/contest01.jpg" style="width: 300px; height: 170px;"></p>
     					<p class="px-2 pb-2" style="font-size: 20px;"><a href="#" style="color: black;">웨딩사진 공모전</a></p>
     					<p class="px-2 py-0" style="font-size: 17px;">상금  1,000,000원</p>
     					<p class="px-2 py-0" style="font-size: 17px;">기간  ~ 2020/01/30</p>
@@ -92,7 +92,7 @@
     			</div>
     			<div class="col-12 col-md-6 col-xl-4 mt-2 mb-4">
     				<div class="convention pb-3" style="margin: auto; width: 300px; background-color: white;">
-    					<p><img src="img/contest01.jpg" style="width: 300px; height: 170px;"></p>
+    					<p><img src="${pageContext.request.contextPath}/img/contest01.jpg" style="width: 300px; height: 170px;"></p>
     					<p class="px-2 pb-2" style="font-size: 20px;"><a href="#" style="color: black;">웨딩사진 공모전</a></p>
     					<p class="px-2 py-0" style="font-size: 17px;">상금  1,000,000원</p>
     					<p class="px-2 py-0" style="font-size: 17px;">기간  ~ 2020/01/30</p>
@@ -100,7 +100,7 @@
     			</div>
     			<div class="col-12 col-md-6 col-xl-4 mt-2 mb-4">
     				<div class="convention pb-3" style="margin: auto; width: 300px; background-color: white;">
-    					<p><img src="img/contest01.jpg" style="width: 300px; height: 170px;"></p>
+    					<p><img src="${pageContext.request.contextPath}/img/contest01.jpg" style="width: 300px; height: 170px;"></p>
     					<p class="px-2 pb-2" style="font-size: 20px;"><a href="#" style="color: black;">웨딩사진 공모전</a></p>
     					<p class="px-2 py-0" style="font-size: 17px;">상금  1,000,000원</p>
     					<p class="px-2 py-0" style="font-size: 17px;">기간  ~ 2020/01/30</p>
@@ -108,7 +108,7 @@
     			</div>
     			<div class="col-12 col-md-6 col-xl-4 mt-2 mb-4">
     				<div class="convention pb-3" style="margin: auto; width: 300px; background-color: white;">
-    					<p><img src="img/contest01.jpg" style="width: 300px; height: 170px;"></p>
+    					<p><img src="${pageContext.request.contextPath}/img/contest01.jpg" style="width: 300px; height: 170px;"></p>
     					<p class="px-2 pb-2" style="font-size: 20px;"><a href="#" style="color: black;">웨딩사진 공모전</a></p>
     					<p class="px-2 py-0" style="font-size: 17px;">상금  1,000,000원</p>
     					<p class="px-2 py-0" style="font-size: 17px;">기간  ~ 2020/01/30</p>

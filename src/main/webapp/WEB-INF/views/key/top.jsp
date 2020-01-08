@@ -18,8 +18,8 @@
     <div class="container-fluid p-0" style="height: 50px;">
         <div class="col-5 col-md-4 col-lg-3 py-0 px-3 px-md-4 h-100 float-left">
             <ul class="h-100 float-left m-0 p-0" style="list-style: none;">
-                <a href="home" class="h-100">
-                    <li class="h-100 float-left" style="line-height: 3.0;"><img src="img/logo.png" style="width: 30px; height: 30px;"></li>
+                <a href="${pageContext.request.contextPath}/home" class="h-100">
+                    <li class="h-100 float-left" style="line-height: 3.0;"><img src="${pageContext.request.contextPath}/img/logo.png" style="width: 30px; height: 30px;"></li>
                     <li class="h-100 float-left mx-2"><span style="font-size: 35px; font-family: 'Cafe24Oneprettynight'; color: #3D516B;">PIC SELL</span></li>
                 </a>
             </ul>
@@ -28,18 +28,18 @@
 	<c:when test="${loginInfo == null and adminInfo == null }">
         <div class="col-7 col-md-6 col-lg-5 col-xl-4 p-0 h-100 float-right text-right">
             <ul class="h-100 float-right mx-3 my-0" style="list-style: none;">
-                <li class="h-100 float-left mx-2 mx-sm-3 mx-md-4" style="line-height: 3.0;"><a href="contest" class="text-dark">공모전</a></li>
-                <li class="h-100 float-left mx-2 mx-sm-3 mx-md-4" style="line-height: 3.0;"><a href="writer" class="text-dark">작가 홈</a></li>
-                <li class="h-100 float-left mx-2 mx-sm-3 mx-md-4" style="line-height: 3.0;"><a href="/member/login.do" class="text-dark">로그인</a></li>
+                <li class="h-100 float-left mx-2 mx-sm-3 mx-md-4" style="line-height: 3.0;"><a href="${pageContext.request.contextPath}/contest/contest.do" class="text-dark">공모전</a></li>
+                <li class="h-100 float-left mx-2 mx-sm-3 mx-md-4" style="line-height: 3.0;"><a href="${pageContext.request.contextPath}/writer/writer.do" class="text-dark">작가 홈</a></li>
+                <li class="h-100 float-left mx-2 mx-sm-3 mx-md-4" style="line-height: 3.0;"><a href="${pageContext.request.contextPath}/member/login.do" class="text-dark">로그인</a></li>
             </ul>
         </div>
         </c:when>
         <c:when test="${adminInfo != null }">
           <div class="col-7 col-md-6 col-lg-5 col-xl-4 p-0 h-100 float-right text-right">
             <ul class="h-100 float-right mx-3 my-0" style="list-style: none;">
-                <li class="h-100 float-left mx-2 mx-sm-3 mx-md-4" style="line-height: 3.0;"><a href="contest" class="text-dark">공모전</a></li>
-                <li class="h-100 float-left mx-2 mx-sm-3 mx-md-4" style="line-height: 3.0;"><a href="writer" class="text-dark">작가 홈</a></li>
-                <li class="h-100 float-left mx-2 mx-sm-3 mx-md-4" style="line-height: 3.0;"><a href="/member/login.do" class="text-dark">로그인</a></li>
+                <li class="h-100 float-left mx-2 mx-sm-3 mx-md-4" style="line-height: 3.0;"><a href="${pageContext.request.contextPath}/contest/contest.do" class="text-dark">공모전</a></li>
+                <li class="h-100 float-left mx-2 mx-sm-3 mx-md-4" style="line-height: 3.0;"><a href="${pageContext.request.contextPath}/writer/writer.do" class="text-dark">작가 홈</a></li>
+                <li class="h-100 float-left mx-2 mx-sm-3 mx-md-4" style="line-height: 3.0;"><a href="${pageContext.request.contextPath}/member/login.do" class="text-dark">로그인</a></li>
             </ul>
         </div>
         </c:when>

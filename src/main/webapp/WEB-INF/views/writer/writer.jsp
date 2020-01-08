@@ -10,7 +10,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 <style>
 /*    작가페이지 Main */
-	.writer {width: 100%; min-height: 250px; background-image: url('/img/write_banner.png'); background-repeat: no-repeat;}
+	.writer {width: 100%; min-height: 250px; background-image: url('${pageContext.request.contextPath}/img/write_banner.png'); background-repeat: no-repeat;}
 	.explanation {margin-top: 5px; padding: 0px; background: none; border: 0; color: white; border-bottom: 1px solid white;}
 	
 	.modal-open {padding: 0;}
@@ -149,7 +149,7 @@
     	</div>
     </div>
       
-    <div class="container-fluid py-4 m-0" style="font-family: 'Cafe24Oneprettynight';">
+    <div class="container-fluid py-4 py-lg-5 m-0" style="font-family: 'Cafe24Oneprettynight';">
         <div class="container px-0 pb-2">
     		<div class="m-auto text-center">
     			<h3 style="font-size: 25px;">픽셀에 이미지 업로드 할 준비 되셨나요?</h3>
