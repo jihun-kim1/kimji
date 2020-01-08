@@ -15,7 +15,6 @@
 	<div class="container-fluid px-0 py-3" style="background-color: #f4f2f5; font-family: 'Cafe24Oneprettynight';">
 		<div class="container p-0 m-auto">
 			<h2 class="mx-3 pt-4 pb-3 px-4 text-center">회원가입</h2>
-			<h2 class="mx-3 pt-4 pb-3 px-4 text-center">회원가입</h2>
 			<h6 class="mx-3 py-2 px-4 text-center">픽셀 홈페이지에 오신걸 환영합니다!</h6>
 			<h6 class="mx-3 py-2 px-4 text-center">저희 사이트에 가입을 하시면,<br>더욱 다양한 혜택을 받으실 수 있습니다!</h6>
 			<h6 class="mx-3 py-2 px-4 text-center">아래의 정보들을 입력하신 후,<br>＇가입하기＇를 누르시면 회원가입이 완료됩니다!</h6>
