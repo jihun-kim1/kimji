@@ -15,7 +15,6 @@ import kh.picsell.service.MemberService;
 
 @Controller
 @RequestMapping("/member")
-
 public class MemberController {
 	@Autowired
 	private HttpSession session;
@@ -25,7 +24,7 @@ public class MemberController {
 
 	@RequestMapping("/signup.do") //회원가입페이지로이동
 	public String toSignup() {
-		return "member/signup";
+		return "member/signup2";
 	}
 	@RequestMapping("/findid.do") //아디찾기페이지로이동
 	public String findid() {
